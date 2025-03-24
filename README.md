@@ -109,7 +109,7 @@ Please make sure to update tests as appropriate.
 
 ## License
 
-[MIT](LICENSE)
+[MIT](LICENSE.md)
 
 ## Support
 
