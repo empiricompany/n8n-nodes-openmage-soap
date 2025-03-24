@@ -68,6 +68,30 @@ To use this node, you need to configure credentials for your OpenMage instance:
 - Requires Node.js version 18.10 or later
 - Requires pnpm version 9.1 or later
 
+## Local Development and Testing
+
+To test and develop this node locally:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/empiricompany/n8n-nodes-openmage-soap.git
+   cd n8n-nodes-openmage-soap
+   ```
+
+2. Build the node and run it in a Docker container:
+   ```bash
+   npm run build && docker rm -f n8n && docker run -it --name n8n \
+     -p 5678:5678 \
+     -v n8n_data:/home/node/.n8n \
+     -v ~/n8n-nodes-openmage-soap:/custom-nodes \
+     -e N8N_CUSTOM_EXTENSIONS="/custom-nodes" -e N8N_COMMUNITY_PACKAGES_ALLOW_TOOL_USAGE=true \
+     docker.n8n.io/n8nio/n8n
+   ```
+
+3. Access the n8n editor at http://localhost:5678
+
+This setup mounts your local repository into the Docker container, allowing you to make changes and test them immediately after rebuilding.
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
