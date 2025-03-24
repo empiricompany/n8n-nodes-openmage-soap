@@ -68,7 +68,7 @@ To use this node, you need to configure credentials for your OpenMage instance:
 
 Let the model define parameters
 
-![tool](https://github.com/user-attachments/assets/c3afacba-157b-4c7b-a10b-bf9e25d6602a)
+![tool](https://github.com/user-attachments/assets/c4c5fd64-6385-4379-8d28-d6fbeec4049d)
 
 
 
