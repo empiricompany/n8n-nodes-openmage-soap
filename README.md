@@ -63,6 +63,15 @@ To use this node, you need to configure credentials for your OpenMage instance:
    }
    ```
 
+### Example workflow as a tool of AI Agent
+![workflow](https://github.com/user-attachments/assets/71bb9bfc-cff8-4a45-95d4-ae13b3416714)
+
+Let the model define parameters
+
+![tool](https://github.com/user-attachments/assets/c3afacba-157b-4c7b-a10b-bf9e25d6602a)
+
+
+
 ## Compatibility
 
 - Requires Node.js version 18.10 or later
