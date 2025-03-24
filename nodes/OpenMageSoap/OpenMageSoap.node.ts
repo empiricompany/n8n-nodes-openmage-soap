@@ -27,8 +27,10 @@ export class OpenMageSoap implements INodeType {
     defaults: {
       name: 'OpenMage SOAP',
     },
-    inputs: [NodeConnectionType.Main],
-		outputs: [NodeConnectionType.Main],
+		// @ts-ignore - node-class-description-outputs-wrong
+		inputs: [{ type: NodeConnectionType.Main }],
+		// @ts-ignore - node-class-description-outputs-wrong
+		outputs: [{ type: NodeConnectionType.Main }],
 		usableAsTool: true,
     credentials: [
       {
@@ -46,6 +48,7 @@ export class OpenMageSoap implements INodeType {
             name: 'sales_order.info',
             value: 'sales_order.info',
             description: 'Get detailed information about a specific order by increment ID',
+						action: 'Get detailed information about a specific order by increment ID',
           },
         ],
         default: 'sales_order.info',

@@ -1,15 +1,15 @@
 {
   "name": "n8n-nodes-openmage-soap",
   "version": "0.1.0",
-  "description": "",
+  "description": "n8n community node for integrating with OpenMage via SOAP API",
   "keywords": [
     "n8n-community-node-package"
   ],
   "license": "MIT",
   "homepage": "",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "Tony",
+    "email": "npmjs@magemega.com"
   },
   "repository": {
     "type": "git",
@@ -39,12 +39,12 @@
       "dist/credentials/OpenMageSoapApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/ExampleNode/OpenMageSoapiApi.node.js"
+      "dist/nodes/OpenMageSoap/OpenMageSoapiApi.node.js"
     ]
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^7.15.0",
-    "eslint": "^8.56.0",
+    "eslint": "^8.57.1",
     "eslint-plugin-n8n-nodes-base": "^1.16.1",
     "gulp": "^4.0.2",
     "prettier": "^3.3.2",
